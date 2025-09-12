@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My portfolio</title>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="m-1">
+        <nav class="flex justify-between items-center p-4 bg-white shadow-md">
+        <span><img src="/assets/images/my logo.png" alt="logo" class=" w-20 h-auto"></span>
+        <ul class="flex space-x-4 text-lg text-md text-slate-800 font-semibold">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Me</li>
+        </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+     <main>
+        <!-- Hero -->
+        <section class="flex flex-col md:flex-row items-center justify-between min-h-screen p-4 bg-gray-100">
+           
+            <!-- Introduction Text -->
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold mb-4 text-gray-800">Hi, I’m Aline Frontend Developer &amp;  UX Designer</h1>
+                <p class="text-lg text-gray-600 mb-6">I craft engaging and user-friendly websites 
+                    that combine clean design with smooth functionality. I’m passionate about turning 
+                    ideas into digital experiences that delight users and help businesses grow.
+                     Whether it’s building a personal portfolio, a web application,
+                      or improving user experience,
+                     I focus on creating solutions that are both practical and visually appealing</p>
+                <button class="inline-block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">Get In Touch</button>
+            </div> 
+            <!-- Profile Image -->
+            <div class="w-auto h-auto mb-6 md:mb-0 md:mr-6">
+                <img src="/assets/images/profile.jpg" alt="Profile Photo" class="w-full h-full object-cover rounded-full border-1 border-blue-500">
+            </div>
+        </section>
+     </main>
+</body>
+</html>
