@@ -12,9 +12,9 @@
         <nav class="flex justify-between items-center p-4 bg-white shadow-md">
         <span><img src="/assets/images/my logo.png" alt="logo" class=" w-20 h-auto"></span>
         <ul class="flex space-x-4 text-lg text-md text-slate-800 font-semibold">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Me</li>
+            <li class="cursor-pointer px-2 py-1 hover:opacity-70 ">Home</li>
+            <li class="cursor-pointer px-2 py-1 hover:opacity-70  ">About</li>
+            <li class="cursor-pointer px-2 py-1 hover:opacity-70 ">Contact Me</li>
         </ul>
         </nav>
     </header>
@@ -38,34 +38,85 @@
             </div> 
             <!-- Profile Image -->
             <div class="w-auto h-auto mb-6 md:mb-0 md:mr-6">
-                <img src="/assets/images/profile.jpg" alt="Profile Photo" class="w-full h-full object-cover rounded-full border-1 border-blue-500">
+                <img src="/assets/images/profile.jpg" alt="Profile Photo" class="w-full h-full object-cover rounded-full border-4 border-blue-500">
             </div>
         </section>
 
         <!-- About me secction -->
-     <section class="p-2 bg-gray-100 flex justify-between md:flex-row items-center gap-6 
-                shadow-[0_-8px_15px_-3px_rgba(0,0,0,0.2)]">
+     <section class="p-2 bg-slate-600 flex justify-between md:flex-row items-center gap-6 m-10 p-4 rounded-lg shadow-md">
   <!-- Profile Image -->
   <div class="flex-shrink-0">
-    <img src="/assets/images/profile.jpg" alt="Profile" class="w-80 h-80 rounded-md border-blue-500">
+    <img src="/assets/images/profile.jpg" alt="Profile" class="w-80 h-90 rounded-md border-blue-500 ">
   </div>
 
   <!-- About Me Text -->
+
   <div class="flex flex-col gap-5">
-    <h2 class="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
+    <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
  
 
-    <p class="text-lg text-gray-700 ">
+    <p class="text-lg text-gray-700 text-white ">
       Hi! I’m Aline, a Frontend Developer and UX Designer passionate
        about creating digital experiences that are both beautiful and functional. I specialize in building responsive websites and web applications that provide seamless 
       user experiences and make complex interactions feel simple and intuitive
     </p>
-    <p class="text-sm text-gray-700 ">With a strong eye for design and a love for coding, I focus on turning ideas into engaging websites that delight users and help businesses grow. From crafting clean interfaces to implementing smooth functionality, 
+    <p class="text-sm text-gray-700 text-white">With a strong eye for design and a love for coding, I focus on turning ideas into engaging websites that delight users and help businesses grow. From crafting clean interfaces to implementing smooth functionality, 
         I combine creativity with technical skills to deliver high-quality solutions.
     </p>
-    <p class="text-sm text-gray-700 ">Beyond development, I enjoy learning new technologies, exploring UX best practices, and continuously improving my craft. I’m always eager to collaborate on projects that challenge me and contribute positively to the digital world.</p>
+    <p class="text-sm text-gray-700 text-white ">Beyond development, I enjoy learning new technologies, exploring UX best practices, and continuously improving my craft. I’m always eager to collaborate on projects that challenge me and contribute positively to the digital world.</p>
   </div>
 </section>
+
+ <!-- my skills -->
+
+  <section>
+    <h1 class="font-bold text-center text-4xl">My Skills</h1>
+    <div class="flex justify-center gap-30 my-15">
+        <img src="/assets/images/html.jpg" alt="html-logo" class="w-50 h-50">
+        <img src="/assets/images/css.jpg" alt="css-logo" class="w-50 h-50">
+        <img src="/assets/images/js.jpg" alt="javascript-logo" class="w-50 h-50">
+    </div>
+    <div class="flex justify-center gap-30 my-10">
+        <img src="/assets/images/react.jpg" alt="react-logo" class="w-50 h-50">
+        <img src="/assets/images/nextjs.jpg" alt="next-js-logo" class="w-50 h-50">
+        <img src="/assets/images/tailwind.jpg" alt="tailwind-logo" class="w-50 h-50">
+    </div>
+  </section>
+
+  <!-- contact me page -->
+
+   <section class=" bg-gray-100 p-10 rounded-lg shadow-md flex flex-col md:flex-row justify-between items-center">
+    
+  <div class="flex flex-col gap-20">
+    
+  <h2 class="text-2xl font-bold text-gray-800  ">Let's get in Touch!</h2>
+  <div class="flex justify-between items-center">
+    <img src="/assets/images/gmail.jpg" alt="gmail logo" class="w-10 h-10">
+    <img src="/assets/images/linkedIn.jpg" alt=" linkedIn logo" class="w-8 h-8">
+    <img src="/assets/images/x logo.jpg" alt="x logo" class="w-10 h-10">
+  </div>
+
+  </div>
+  <div>
+  <form action="" class="flex flex-col gap-4 bg-slate-600 p-6 rounded-lg shadow-md w-150 h-full">
+    <label for="name" class="text-gray-50 font-bold">Fullname</label>
+    <input type="text" name="name" placeholder="Enter your fullname" class="p-3 border border-gray-100 text-white rounded-full w-full  placeholder:text-gray-100 focus:outline-none focus:ring-0">
+    <label for="email" class="text-gray-50 font-bold">Email</label>
+    <input type="email" name="email" placeholder="Enter your email" class="p-3 border text-white border-gray-100 rounded-full w-full placeholder:text-gray-100 focus:outline-none focus:ring-0">
+    <label for="message" class="text-gray-50 font-bold">Message</label>
+   <textarea name="message" rows="4" placeholder="Enter your message"
+  class="border border-gray-100 text-white rounded-md p-2 w-full placeholder:text-gray-100  focus:outline-none focus:ring-0"></textarea>
+    <button class="cursor-pointer bg-blue-500 text-white font-semibold px-8 py-4 rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition text-center" >
+  Submit
+</button>
+  </form>
+  </div>
+   </section>
+   <footer class="mt-10 bg-gray-900">
+  <p class="text-center text-gray-200 text-sm p-4 border-t border-gray-700">
+    © 2025 Aline. All rights reserved.
+  </p>
+</footer>
      </main>
 </body>
 </html>
