@@ -23,26 +23,28 @@
       <label for="menu-toggle" class="cursor-pointer text-2xl">☰</label>
 
       <!-- Mobile Menu -->
-      <ul class="absolute left-0 top-14 w-full bg-white text-lg text-slate-700 font-semibold shadow-md flex-col space-y-4 p-4 hidden peer-checked:flex">
-        <li class="cursor-pointer hover:opacity-80  transition font-mono">Home</li>
-        <li class="cursor-pointer hover:opacity-80 transition font-mono">About</li>
-        <li class="cursor-pointer hover:opacity-80 transition font-mono">Contact Me</li>
-      </ul>
+    
+<ul class="absolute left-0 top-14 w-full bg-white text-lg text-slate-700 font-semibold shadow-md flex-col space-y-4 p-4 hidden peer-checked:flex">
+  <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#home">Home</a></li>
+  <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#about">About</a></li>
+  <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#contact">Contact Me</a></li>
+</ul>
+
     </div>
 
     <!-- Desktop Menu -->
-    <ul class="hidden md:flex space-x-6 text-lg text-slate-700 font-semibold">
-      <li class="cursor-pointer hover:opacity-80  transition font-mono">Home</li>
-      <li class="cursor-pointer hover:opacity-80 transition font-mono">About</li>
-      <li class="cursor-pointer hover:opacity-80 transition font-mono">Contact Me</li>
-    </ul>
+<ul class="hidden md:flex space-x-6 text-lg text-slate-700 font-semibold">
+  <li><a href="#home" class="cursor-pointer hover:opacity-80 transition font-mono">Home</a></li>
+  <li><a href="#about" class="cursor-pointer hover:opacity-80 transition font-mono">About</a></li>
+  <li><a href="#contact" class="cursor-pointer hover:opacity-80 transition font-mono">Contact Me</a></li>
+</ul>
 
   </nav>
 </header>
     <!-- Main Content -->
      <main>
         <!-- Hero -->
-        <section class="flex flex-col md:flex-row items-center justify-between min-h-screen p-4 bg-gray-100">
+        <section id="home" class="flex flex-col md:flex-row items-center justify-between min-h-screen p-4 bg-gray-100">
            
             <!-- Introduction Text -->
             <div class="text-center md:text-left">
@@ -64,7 +66,7 @@
         </section>
 
         <!-- About me secction -->
-     <section class="p-4 bg-slate-600 flex flex-col md:flex-row items-center gap-6 m-10  rounded-lg shadow-md">
+     <section id="about" class="p-4 bg-slate-600 flex flex-col md:flex-row items-center gap-6 m-10  rounded-lg shadow-md">
      
   <!-- Image -->
   <div class="flex-shrink-0">
@@ -167,7 +169,7 @@
 </section>
 
 <!-- Contact Me Page -->
-<section class="bg-gray-100 p-6 sm:p-10 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-start gap-8">
+<section id="contact" class="bg-gray-100 p-6 sm:p-10 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-start gap-8">
 
   <!-- Left side: Contact info -->
   <div class="flex flex-col gap-6 md:gap-10  flex-1">
