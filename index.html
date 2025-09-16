@@ -1,211 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>My portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>My portfolio</title>
 </head>
+
 <body>
-   <!-- Header/Navbar -->
-<header class="sticky top-0 z-50">
-  <nav class="flex items-center justify-between px-4 py-2 bg-white shadow-md">
+  <!-- Header/Navbar -->
+  <header class="sticky top-0 z-50">
+    <nav class="flex items-center justify-between px-4 py-2 bg-white shadow-md">
 
-    <!-- Logo -->
-    <span>
-      <img src="/assets/images/my logo.png" alt="logo" 
-           class="w-20 h-auto cursor-pointer hover:opacity-80 transition">
-    </span>
+      <!-- Logo -->
+      <span>
+        <img src="/assets/images/my logo.png" alt="logo" class="w-20 h-auto cursor-pointer hover:opacity-80 transition">
+      </span>
 
-    <!-- Hamburger -->
-    <div class="md:hidden">
-      <input type="checkbox" id="menu-toggle" class="peer hidden" />
-      <label for="menu-toggle" class="cursor-pointer text-2xl">☰</label>
+      <!-- Hamburger -->
+      <div class="md:hidden">
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+        <label for="menu-toggle" class="cursor-pointer text-2xl">☰</label>
 
-      <!-- Mobile Menu -->
-    
-<ul class="absolute left-0 top-14 w-full bg-white text-lg text-slate-700 font-semibold shadow-md flex-col space-y-4 p-4 hidden peer-checked:flex">
-  <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#home">Home</a></li>
-  <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#about">About</a></li>
-  <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#contact">Contact Me</a></li>
-</ul>
+        <!-- Mobile Menu -->
 
-    </div>
+        <ul
+          class="absolute left-0 top-14 w-full bg-white text-lg text-slate-700 font-semibold shadow-md flex-col space-y-4 p-4 hidden peer-checked:flex">
+          <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#home">Home</a></li>
+          <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#about">About</a></li>
+          <li class="cursor-pointer hover:opacity-80 transition font-mono"><a href="#contact">Contact Me</a></li>
+        </ul>
 
-    <!-- Desktop Menu -->
-<ul class="hidden md:flex space-x-6 text-lg text-slate-700 font-semibold">
-  <li><a href="#home" class="cursor-pointer hover:opacity-80 transition font-mono">Home</a></li>
-  <li><a href="#about" class="cursor-pointer hover:opacity-80 transition font-mono">About</a></li>
-  <li><a href="#contact" class="cursor-pointer hover:opacity-80 transition font-mono">Contact Me</a></li>
-</ul>
+      </div>
 
-  </nav>
-</header>
-    <!-- Main Content -->
-     <main>
-        <!-- Hero -->
-        <section id="home" class="flex flex-col md:flex-row items-center justify-between min-h-screen p-4 bg-gray-100">
-           
-            <!-- Introduction Text -->
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl font-bold mb-4 text-gray-800">Hi, I’m Aline Frontend Developer &amp;  UX Designer</h1>
-                <p class="text-lg text-gray-600 mb-6">I craft engaging and user-friendly websites 
-                    that combine clean design with smooth functionality. I’m passionate about turning 
-                    ideas into digital experiences that delight users and help businesses grow.
-                     Whether it’s building a personal portfolio, a web application,
-                      or improving user experience,
-                     I focus on creating solutions that are both practical and visually appealing</p>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-lg text-slate-700 font-semibold">
+        <li><a href="#home" class="cursor-pointer hover:opacity-80 transition font-mono">Home</a></li>
+        <li><a href="#about" class="cursor-pointer hover:opacity-80 transition font-mono">About</a></li>
+        <li><a href="#contact" class="cursor-pointer hover:opacity-80 transition font-mono">Contact Me</a></li>
+      </ul>
 
-                     <!-- get in touch button -->
-                <button class="inline-block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition md:mx-10">Get In Touch</button>
-            </div> 
-            <!-- Profile Image -->
-            <div class="w-auto h-auto mt-10 mb-6 ">
-                <img src="/assets/images/profile.jpg" alt="Profile Photo" class="w-full h-full object-cover rounded-full border-4 border-blue-500">
+    </nav>
+  </header>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero -->
+    <section id="home" class="flex flex-col md:flex-row items-center justify-between min-h-screen p-4 bg-gray-100">
+
+      <!-- Introduction Text -->
+      <div class="text-center md:text-left">
+        <h1 class="text-4xl font-bold mb-4 text-gray-800">Hi, I’m Aline Frontend Developer &amp; UX Designer</h1>
+        <p class="text-lg text-gray-600 mb-6">I craft engaging and user-friendly websites
+          that combine clean design with smooth functionality. I’m passionate about turning
+          ideas into digital experiences that delight users and help businesses grow.
+          Whether it’s building a personal portfolio, a web application,
+          or improving user experience,
+          I focus on creating solutions that are both practical and visually appealing</p>
+
+        <!-- get in touch button -->
+        <button
+          class="inline-block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition md:mx-10">Get
+          In Touch</button>
+      </div>
+      <!-- Profile Image -->
+      <div class="w-auto h-auto mt-10 mb-6 ">
+        <img src="/assets/images/profile.jpg" alt="Profile Photo"
+          class="w-full h-full object-cover rounded-full border-4 border-blue-500">
+      </div>
+    </section>
+
+    <!-- About me secction -->
+    <section id="about"
+      class="p-4 bg-slate-600 flex flex-col md:flex-row items-center gap-6 m-10  rounded-lg shadow-md">
+
+      <!-- Image -->
+      <div class="flex-shrink-0">
+        <img src="/assets/images/profile.jpg" alt="Profile"
+          class="w-48 h-48 md:w-80 md:h-90 rounded-md border-4 border-blue-500 object-cover ">
+
+      </div>
+
+      <!-- About Me Text -->
+
+      <div class="flex flex-col gap-5">
+        <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
+
+
+        <p class="text-lg text-gray-700 text-white ">
+          Hi! I’m Aline, a Frontend Developer and UX Designer passionate
+          about creating digital experiences that are both beautiful and functional. I specialize in building responsive
+          websites and web applications that provide seamless
+          user experiences and make complex interactions feel simple and intuitive
+        </p>
+        <p class="text-sm text-gray-700 text-white">With a strong eye for design and a love for coding, I focus on
+          turning ideas into engaging websites that delight users and help businesses grow. From crafting clean
+          interfaces to implementing smooth functionality,
+          I combine creativity with technical skills to deliver high-quality solutions.
+        </p>
+        <p class="text-sm text-gray-700 text-white ">Beyond development, I enjoy learning new technologies, exploring UX
+          best practices, and continuously improving my craft. I’m always eager to collaborate on projects that
+          challenge me and contribute positively to the digital world.</p>
+      </div>
+    </section>
+
+    <!-- My Skills -->
+    <section class="px-4 py-8">
+      <h1 class="font-bold text-center text-4xl text-gray-700 mb-8">My Skills</h1>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 justify-items-center">
+        <img src="/assets/images/html.jpg" alt="html-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
+        <img src="/assets/images/css.jpg" alt="css-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
+        <img src="/assets/images/js.jpg" alt="javascript-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
+        <img src="/assets/images/react.jpg" alt="react-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
+        <img src="/assets/images/nextjs.jpg" alt="next-js-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
+        <img src="/assets/images/tailwind.jpg" alt="tailwind-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
+      </div>
+    </section>
+
+    <!-- My Work / Projects Section -->
+    <section class="px-4 py-10 bg-gray-50">
+      <!-- Section Title -->
+      <h1 class="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-4">My Work</h1>
+      <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+        Here are some of the projects I’ve built to showcase my skills in web development.
+      </p>
+
+      <!-- Projects Grid -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+        <!-- Project 1: Todo List -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform hover:scale-105 transition duration-300">
+          <img src="/assets/images/todo.jpg" alt="Todo List Screenshot" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Todo List</h3>
+            <p class="text-gray-600 mb-2">
+              A simple app to add, edit, and delete tasks. Helps users stay organized and manage daily activities.
+            </p>
+            <div class="flex gap-2 flex-wrap mb-2">
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">React</span>
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">Tailwind</span>
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">Node.js</span>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- About me secction -->
-     <section id="about" class="p-4 bg-slate-600 flex flex-col md:flex-row items-center gap-6 m-10  rounded-lg shadow-md">
-     
-  <!-- Image -->
-  <div class="flex-shrink-0">
-    <img src="/assets/images/profile.jpg" alt="Profile" class="w-48 h-48 md:w-80 md:h-90 rounded-md border-4 border-blue-500 object-cover ">
-    
-  </div>
+        <!-- Project 2: Rock Scissor Paper -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform hover:scale-105 transition duration-300">
+          <img src="/assets/images/rock scissor paper.jpg" alt="Rock Scissor Paper Screenshot"
+            class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Rock Scissor Paper</h3>
+            <p class="text-gray-600 mb-2">
+              A fun game where users play against the computer. Shows real-time results and keeps score.
+            </p>
+            <div class="flex gap-2 flex-wrap mb-2">
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">HTML</span>
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">CSS</span>
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">JavaScript</span>
+            </div>
+          </div>
+        </div>
 
-  <!-- About Me Text -->
+        <!-- Project 3: Calculator -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform hover:scale-105 transition duration-300">
+          <img src="/assets/images/calculator.jpg" alt="Calculator Screenshot" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Calculator</h3>
+            <p class="text-gray-600 mb-2">
+              A basic calculator that performs addition, subtraction, multiplication, and division.
+            </p>
+            <div class="flex gap-2 flex-wrap mb-2">
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">HTML</span>
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">Tailwind</span>
+              <span class="bg-gray-200 px-2 py-1 rounded text-sm">JavaScript</span>
+            </div>
+          </div>
+        </div>
 
-  <div class="flex flex-col gap-5">
-    <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
- 
+      </section>
+    </section>
 
-    <p class="text-lg text-gray-700 text-white ">
-      Hi! I’m Aline, a Frontend Developer and UX Designer passionate
-       about creating digital experiences that are both beautiful and functional. I specialize in building responsive websites and web applications that provide seamless 
-      user experiences and make complex interactions feel simple and intuitive
-    </p>
-    <p class="text-sm text-gray-700 text-white">With a strong eye for design and a love for coding, I focus on turning ideas into engaging websites that delight users and help businesses grow. From crafting clean interfaces to implementing smooth functionality, 
-        I combine creativity with technical skills to deliver high-quality solutions.
-    </p>
-    <p class="text-sm text-gray-700 text-white ">Beyond development, I enjoy learning new technologies, exploring UX best practices, and continuously improving my craft. I’m always eager to collaborate on projects that challenge me and contribute positively to the digital world.</p>
-  </div>
-</section>
+    <!-- Contact Me Page -->
+    <section id="contact"
+      class="bg-gray-100 p-6 sm:p-10 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-start gap-8">
 
- <!-- My Skills -->
-<section class="px-4 py-8">
-  <h1 class="font-bold text-center text-4xl text-gray-700 mb-8">My Skills</h1>
-
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 justify-items-center">
-      <img src="/assets/images/html.jpg" alt="html-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
-      <img src="/assets/images/css.jpg" alt="css-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
-      <img src="/assets/images/js.jpg" alt="javascript-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
-      <img src="/assets/images/react.jpg" alt="react-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
-      <img src="/assets/images/nextjs.jpg" alt="next-js-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
-      <img src="/assets/images/tailwind.jpg" alt="tailwind-logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28">
-  </div>
-</section>
-
-<!-- My Work / Projects Section -->
-<section class="px-4 py-10 bg-gray-50">
-  <!-- Section Title -->
-  <h1 class="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-4">My Work</h1>
-  <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-    Here are some of the projects I’ve built to showcase my skills in web development.
-  </p>
-
-  <!-- Projects Grid -->
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
-    <!-- Project 1: Todo List -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform hover:scale-105 transition duration-300">
-      <img src="/assets/images/todo.jpg" alt="Todo List Screenshot" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-xl mb-2">Todo List</h3>
-        <p class="text-gray-600 mb-2">
-          A simple app to add, edit, and delete tasks. Helps users stay organized and manage daily activities.
-        </p>
-        <div class="flex gap-2 flex-wrap mb-2">
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">React</span>
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">Tailwind</span>
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">Node.js</span>
+      <!-- Left side: Contact info -->
+      <div class="flex flex-col gap-6 md:gap-10  flex-1">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800">Let's get in Touch!</h2>
+        <div class="flex gap-4 md:gap-6 items-center">
+          <img src="/assets/images/gmail.jpg" alt="gmail logo"
+            class="w-10 h-10 cursor-pointer hover:scale-110 hover:opacity-80 transition transform duration-300">
+          <img src="/assets/images/linkedIn.jpg" alt="linkedIn logo"
+            class="w-10 h-10 cursor-pointer hover:scale-110 hover:opacity-80 transition transform duration-300">
+          <img src="/assets/images/x logo.jpg" alt="x logo"
+            class="w-10 h-10 cursor-pointer hover:scale-110 hover:opacity-80 transition transform duration-300">
         </div>
       </div>
-    </div>
 
-    <!-- Project 2: Rock Scissor Paper -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform hover:scale-105 transition duration-300">
-      <img src="/assets/images/rock scissor paper.jpg" alt="Rock Scissor Paper Screenshot" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-xl mb-2">Rock Scissor Paper</h3>
-        <p class="text-gray-600 mb-2">
-          A fun game where users play against the computer. Shows real-time results and keeps score.
-        </p>
-        <div class="flex gap-2 flex-wrap mb-2">
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">HTML</span>
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">CSS</span>
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">JavaScript</span>
-        </div>
+      <!-- Right side: Form -->
+      <div class="flex-1 w-full md:w-auto">
+        <form action="" class="flex flex-col gap-4 bg-slate-600 p-6 sm:p-8 rounded-lg shadow-md w-full">
+          <label for="name" class="text-gray-50 font-bold">Fullname</label>
+          <input type="text" name="name" placeholder="Enter your fullname"
+            class="p-3 border border-gray-100 text-white rounded-full w-full placeholder:text-gray-100 focus:outline-none focus:ring-0">
+
+          <label for="email" class="text-gray-50 font-bold">Email</label>
+          <input type="email" name="email" placeholder="Enter your email"
+            class="p-3 border text-white border-gray-100 rounded-full w-full placeholder:text-gray-100 focus:outline-none focus:ring-0">
+
+          <label for="message" class="text-gray-50 font-bold">Message</label>
+          <textarea name="message" rows="4" placeholder="Enter your message"
+            class="border border-gray-100 text-white rounded-md p-2 w-full placeholder:text-gray-100 focus:outline-none focus:ring-0"></textarea>
+
+          <button
+            class="cursor-pointer bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition text-center mt-2">
+            Submit
+          </button>
+        </form>
       </div>
-    </div>
 
-    <!-- Project 3: Calculator -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transform hover:scale-105 transition duration-300">
-      <img src="/assets/images/calculator.jpg" alt="Calculator Screenshot" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-xl mb-2">Calculator</h3>
-        <p class="text-gray-600 mb-2">
-          A basic calculator that performs addition, subtraction, multiplication, and division.
-        </p>
-        <div class="flex gap-2 flex-wrap mb-2">
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">HTML</span>
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">Tailwind</span>
-          <span class="bg-gray-200 px-2 py-1 rounded text-sm">JavaScript</span>
-        </div>
-      </div>
-    </div>
+    </section>
 
-  </section>
-</section>
-
-<!-- Contact Me Page -->
-<section id="contact" class="bg-gray-100 p-6 sm:p-10 rounded-lg shadow-md flex flex-col md:flex-row md:justify-between md:items-start gap-8">
-
-  <!-- Left side: Contact info -->
-  <div class="flex flex-col gap-6 md:gap-10  flex-1">
-    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800">Let's get in Touch!</h2>
-    <div class="flex gap-4 md:gap-6 items-center">
-      <img src="/assets/images/gmail.jpg" alt="gmail logo" class="w-10 h-10 cursor-pointer hover:scale-110 hover:opacity-80 transition transform duration-300">
-      <img src="/assets/images/linkedIn.jpg" alt="linkedIn logo" class="w-10 h-10 cursor-pointer hover:scale-110 hover:opacity-80 transition transform duration-300">
-      <img src="/assets/images/x logo.jpg" alt="x logo" class="w-10 h-10 cursor-pointer hover:scale-110 hover:opacity-80 transition transform duration-300">
-    </div>
-  </div>
-
-  <!-- Right side: Form -->
-  <div class="flex-1 w-full md:w-auto">
-    <form action="" class="flex flex-col gap-4 bg-slate-600 p-6 sm:p-8 rounded-lg shadow-md w-full">
-      <label for="name" class="text-gray-50 font-bold">Fullname</label>
-      <input type="text" name="name" placeholder="Enter your fullname" class="p-3 border border-gray-100 text-white rounded-full w-full placeholder:text-gray-100 focus:outline-none focus:ring-0">
-
-      <label for="email" class="text-gray-50 font-bold">Email</label>
-      <input type="email" name="email" placeholder="Enter your email" class="p-3 border text-white border-gray-100 rounded-full w-full placeholder:text-gray-100 focus:outline-none focus:ring-0">
-
-      <label for="message" class="text-gray-50 font-bold">Message</label>
-      <textarea name="message" rows="4" placeholder="Enter your message" class="border border-gray-100 text-white rounded-md p-2 w-full placeholder:text-gray-100 focus:outline-none focus:ring-0"></textarea>
-
-      <button class="cursor-pointer bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition text-center mt-2">
-        Submit
-      </button>
-    </form>
-  </div>
-
-</section>
-
-   <footer class="mt-10 bg-slate-800">
-  <p class="text-center text-gray-200 text-sm p-4 border-t border-gray-700">
-    © 2025 Aline. All rights reserved.
-  </p>
-</footer>
-     </main>
+    <footer class="mt-10 bg-slate-800">
+      <p class="text-center text-gray-200 text-sm p-4 border-t border-gray-700">
+        © 2025 Aline. All rights reserved.
+      </p>
+    </footer>
+  </main>
 </body>
+
 </html>
